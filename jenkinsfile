@@ -1,16 +1,29 @@
 pipeline
 { 
  agent any
- 
+ {
 	stages
 	{
-			stage('print hi')
+			stage('print Clonning')
 			{
 				steps 
 				{
-					sh 'echo hi'
+					sh 'echo Clonning'
 				}
 			}
+				stage('print Test')
+					{steps
+						{
+							sh'echo test'
+						}
+					}
+
+				stage('print Build')
+						{Steps
+							{
+							sh 'echo Build'
+							}
+						}
 	}
- 
+ }
 }
