@@ -1,0 +1,18 @@
+pipeline 
+	{
+		agent any
+			{
+			  stages
+				{
+
+					stages('print Hi')
+						{
+
+							steps{
+								sh'echo Hi'
+								}
+						}
+				}
+			}
+
+	}
